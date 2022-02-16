@@ -398,7 +398,7 @@ namespace EmotivUnityPlugin
                         if (_pmBuff == null){
                             _pmBuff = new PMDataBuffer();
                             int count = _pmBuff.SetChannels(e[key]);
-                            _pmBuff.SettingBuffer(4, 4, count);
+                            _pmBuff.SettingBuffer(1, 1, count);
                             _dsProcess.PerfDataReceived += _pmBuff.OnPMDataReceived;
                             UnityEngine.Debug.Log("Subscribed done: Peformance metrics Data Stream");
                         }
